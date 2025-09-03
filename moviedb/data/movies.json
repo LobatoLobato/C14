@@ -1,0 +1,66 @@
+[
+    {
+        "director": "Sion Sono",
+        "duration": 14220,
+        "genres": [
+            "Action",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "rating": 8.0,
+        "studios": [
+            "Omega Project"
+        ],
+        "synopsis": "The story of a teenage boy named Yu, who falls for Yoko, a girl he runs into while working as an \"up-skirt\" photographer in an offshoot of the porn industry. His attempts to woo her are complicated by a spot of cross-dressing – which convinces Yoko that she is lesbian – dalliances with kung-fu and crime, and a constant struggle with the guilt that's a legacy of his Catholic upbringing.",
+        "title": "Love Exposure",
+        "writers": [
+            "Sion Sono"
+        ],
+        "year": 2009
+    },
+    {
+        "director": "John Woo",
+        "duration": 5700,
+        "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "rating": 7.4,
+        "studios": [
+            "Cinema City",
+            "Film Workshop"
+        ],
+        "synopsis": "A reforming ex-gangster tries to reconcile with his estranged policeman brother, but the ties to his former gang are difficult to break.",
+        "title": "A Better Tomorrow",
+        "writers": [
+            "John Woo",
+            "Tsui Hark",
+            "Chan Hing-Kai",
+            "Leung Suk-Wah"
+        ],
+        "year": 1986
+    },
+    {
+        "director": "Christopher Nolan",
+        "duration": 148,
+        "genres": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "rating": 8.8,
+        "studios": [
+            "Warner Bros.",
+            "Legendary Pictures",
+            "Syncopy"
+        ],
+        "synopsis": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+        "title": "Inception",
+        "writers": [
+            "Christopher Nolan"
+        ],
+        "year": 2010
+    }
+]
