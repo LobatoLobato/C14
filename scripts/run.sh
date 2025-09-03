@@ -3,4 +3,4 @@
 ROOT_DIR=$(dirname $(dirname $(realpath "$0")))
 
 "$ROOT_DIR/scripts/build.sh" $1
-"$ROOT_DIR/build/$1/$1" $ROOT_DIR
+"$ROOT_DIR/build/bin/$1" $ROOT_DIR
