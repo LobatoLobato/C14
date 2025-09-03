@@ -28,7 +28,7 @@ class MovieService {
     return nlohmann::json::parse(file).get<std::vector<Movie>>();
   }
 
-  void addMovie(const Movie& movie) {
+  bool addMovie(const Movie& movie) {
     std::ifstream file(data_path_);
     auto movies = nlohmann::json::parse(file).get<nlohmann::json::array_t>();
     auto it = std::find_if(movies.begin(), movies.end(), [&](const nlohmann::json& m) {
@@ -38,7 +38,28 @@ class MovieService {
       movies.push_back(movie);
       std::ofstream outFile(data_path_);
       outFile << nlohmann::json(movies).dump(4);
+      return true;
     }
+
+    return false;
+  }
+
+  bool removeMovie(const std::string& title) {
+    std::ifstream file(data_path_);
+    auto movies = nlohmann::json::parse(file).get<nlohmann::json::array_t>();
+    auto it = std::find_if(movies.begin(), movies.end(), [&](const nlohmann::json& m) {
+      return m["title"] == title;
+    });
+
+    if (it != movies.end()) {
+      movies.erase(it);
+      std::ofstream outFile(data_path_);
+      outFile << nlohmann::json(movies).dump(4);
+
+      return true;
+    }
+
+    return false;
   }
 
   private:
